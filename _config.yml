@@ -1,4 +1,4 @@
-title: 병천구석에 박혀있음 # your site title
+title: DevJong # your site title
 author: jonghopark95
 email: jong951005@gmail.com # email for form submission, you also have to change it in _js/scripts.js
 description: > # this means to ignore newlines until "baseurl:"
@@ -19,7 +19,13 @@ social:
     - https://keybase.io/benbalter
 
 disqus:
-  shortname: 박종호 # to enable comments replace with your_disqus_shortname
+  shortname: disqus_OWfoyghYRX # to enable comments replace with your_disqus_shortname
+
+# THEME SETTINGS
+navigation: # Navigation links
+  - { name: "test", link: "/test" }
+  - { name: "About", link: "/about" }
+  - { name: "Contact", link: "/contact" }
 
 # Build settings
 markdown: kramdown
