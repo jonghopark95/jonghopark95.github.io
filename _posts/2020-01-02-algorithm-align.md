@@ -16,7 +16,7 @@ PS 공부를 하며 알고리즘 정렬에 대해 간략히 정리해봤습니�
 
 ---
 
-<a name="select_align"></a>
+<a name="select_align"><\*\*\*\*/a>
 
 ## 선택 정렬
 
@@ -88,4 +88,32 @@ print(array)
 퀵 정렬은 **재귀 함수** 형태로 작성하였을 때 구현이 매우 간단해진다.
 재귀 함수와 동작 원리가 같다면, 종료 조건도 있어야 할 것이다.
 
-퀵 정렬의 종료 조건은 리스트의 데이터 개수가 1개인 경우이다.
+퀵 정렬의 종료 조건은 리스트의 데이터 개수가 1개인 경우이다. 리스트의 원소가 1개라면 분할이 불가능하다.
+
+### 전통적 형태의 퀵 정렬 소스코드
+
+```python
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+
+def quick_sort(array, start, end):
+    if start >= end: #원소가 1개인 경우 종료
+        return
+    pivot = start
+    left = start + 1
+    right = end
+    while left <= right:
+        while left <= end and array[left] <= array[pivot]:
+            left += 1   # 피벗보다 큰 데이터 탐색
+        while right > start and array[right] >= array[pivot]:
+            right -= 1  # 피벗보다 작은 데이터 탐색
+        if left > right:   # 교차되는 경우 작은 데이터와 피벗 교체
+            array[right], array[pivot] = array[pivot], array[right]
+        else:   # 엇갈리지 않을 경우 작은 데이터와 큰 데이터 교체
+            array[left], array[right] = array[right], array[left]
+    quick_sort(array, start, right-1)
+    quick_sort(array, right+1, end)
+
+quick_sort(array, 0, len(array)-1)
+
+print(array)
+```
