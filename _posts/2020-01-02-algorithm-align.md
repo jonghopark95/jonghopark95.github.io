@@ -117,3 +117,22 @@ quick_sort(array, 0, len(array)-1)
 
 print(array)
 ```
+
+### 파이썬 특성을 살려 짧게 작성한 퀵 정렬 소스코드
+
+```python
+array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+
+def quick_sort(array):
+  if len(array) <= 1:
+    return array
+  pivot = array[0]
+  rest = array[1:]
+
+  left_side = [x for x in rest if x <= pivot]
+  right_side = [x for x in rest if x > pivot]
+
+  return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+
+print(quick_sort(array))
+```
