@@ -126,13 +126,16 @@ array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 def quick_sort(array):
   if len(array) <= 1:
     return array
+
   pivot = array[0]
   rest = array[1:]
 
-  left_side = [x for x in rest if x <= pivot]
-  right_side = [x for x in rest if x > pivot]
+  left_arr = [_ for _ in rest if _ <= pivot]
+  right_arr = [_ for _ in rest if _ >= pivot]
 
-  return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+  return quick_sort(left_arr) + [pivot] + quick_sort(right_arr)
 
 print(quick_sort(array))
 ```
+
+### 시간 복잡도
