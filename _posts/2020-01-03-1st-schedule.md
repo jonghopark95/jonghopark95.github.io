@@ -11,7 +11,7 @@ featured-img: aim
 
 ## 할 것
 
-![schedule](./schedule1.png)
+![schedule](../pr_img/schedule1.png)
 
 - 알고리즘 ~그래프 이론까지
 - 프론트 엔드 공부 하기
