@@ -9,12 +9,16 @@
 <lastmod>2020-01-03T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/useMemo-copy/</loc>
+<loc>http://localhost:4000/array-render/</loc>
 <lastmod>2020-01-04T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/useMemo/</loc>
 <lastmod>2020-01-04T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/sass-scss/</loc>
+<lastmod>2020-01-05T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/404/</loc>
