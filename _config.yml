@@ -19,7 +19,7 @@ social:
     - https://keybase.io/benbalter
 
 disqus:
-  shortname: disqus_OWfoyghYRX # to enable comments replace with your_disqus_shortname
+  shortname: "jh-personal-study" # to enable comments replace with your_disqus_shortname
 
 # THEME SETTINGS
 navigation: # Navigation links
