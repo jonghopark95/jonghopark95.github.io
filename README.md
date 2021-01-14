@@ -1,40 +1,8 @@
 [![Gem Version](https://badge.fury.io/rb/jekyll-sleek.svg)](https://badge.fury.io/rb/jekyll-sleek) [![Build Status](https://travis-ci.org/janczizikow/sleek.svg?branch=master)](https://travis-ci.org/janczizikow/sleek) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/janczizikow/sleek)
+
 # Sleek
 
 A modern [Jekyll](https://jekyllrb.com/) theme focused on speed performance & SEO best practices.
-
-## Features
-
-* Compatible with [Github Pages](https://pages.github.com/)
-* Minimal, responsive and speed performance optimized
-* SEO friendly, with help of [Jekyll SEO Plugin](https://github.com/jekyll/jekyll-seo-tag)
-* Easy [Google Tag Manager](https://tagmanager.google.com/) Integration
-* Support for [Disqus](https://disqus.com/) comments
-* Form submissions with [Formspree](https://formspree.io/)
-
-[Preview Demo](https://janczizikow.github.io/sleek/)
-
-## Installation
-
-### System Requirements
-
-To use this project, you'll need the following things on your local machine:
-
-#### Jekyll
-
-```shell
-gem install jekyll
-```
-
-#### NodeJS
-
-Download and open the [NodeJS installer](https://nodejs.org/en/)
-
-#### Gulp.js (optional, but recommended)
-
-```shell
-sudo npm install -g gulpfile
-```
 
 ### Up & Running
 
@@ -42,7 +10,8 @@ sudo npm install -g gulpfile
 2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/sleek.git`
 3. Inside the directory run `bundle install` and `npm install`
 4. If you want to use [gulp.js](https://gulpjs.com/) run `gulp` or `npm start`
-  * if you don't want to use gulp you can simply run `bundle exec jekyll serve`
+
+- if you don't want to use gulp you can simply run `bundle exec jekyll serve`
 
 #### Installing to existing jekyll project
 
@@ -66,7 +35,6 @@ Or install it yourself as:
 
     $ gem install jekyll-sleek
 
-
 ## File Structure Overview
 
 ```bash
@@ -78,7 +46,7 @@ sleek
 ├── _posts                     # blog posts
 ├── _sass                      # Sass partials
 ├── assets
-|  ├── css	                   # minified css files  
+|  ├── css	                   # minified css files
 |  ├── img                     # images and icons used for the template
 |  └── js		                   # bundled and minified files from _js folder
 ├── _config.yml                # sample configuration
@@ -107,8 +75,8 @@ To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/c
 disqus:
   shortname: my_disqus_shortname
 ```
-### Formspree
 
+### Formspree
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
