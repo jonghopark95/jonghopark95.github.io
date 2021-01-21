@@ -108,8 +108,10 @@ export default function App() {
 
 > **Warning: Each child in a list should have a unique "key" prop. See https://reactjs.org/link/warning-keys for more information.**
 
-다음과 같은 오류를 만나게 됩니다. 이 오류를 해결하기 위해서는 리스트의 각 항목에 Key를 할당하면 됩니다.
+~~다음과 같은 오류를 만나게 됩니다. 이 오류를 해결하기 위해서는 리스트의 각 항목에 Key를 할당하면 됩니다.~~
 
 ```js
 return arr.map((i, index) => <li key={index}>{i}</li>);
 ```
+
+key를 사용하지 않아도 컴포넌트를 출력하는데에는 문제가 없다. 그러나 DOM 요소를 식별하기 위해 key prop을 넣어줘야한다. (https://ko.reactjs.org/docs/reconciliation.html#recursing-on-children)
